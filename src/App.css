@@ -1,22 +1,25 @@
-.App {
-  text-align: center;
+.main{
+  background-image: url('./back1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover
 }
 
-.App-logo {
-  height: 40vmin;
+div{
+  font-family: 'Permanent Marker', cursive;
+  text-transform: capitalize;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+img{
+  height:50px;
+  width:50px;
 }
 
-.App-link {
-  color: #09d3ac;
+.headline h1, .headline p {
+  display: inline;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 28px;    
+}
+.headline h1 {
+  font-weight: bold;
 }
