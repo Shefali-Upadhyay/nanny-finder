@@ -1,7 +1,7 @@
 import Firebase from 'firebase';
 
 var config = {
-  apiKey: "",
+  apiKey: "AIzaSyBeRzHnhyjdoLmeJ9IxOKqhRYP1KcZnIqQ",
   authDomain: "nanny-finder-reactjs.firebaseapp.com",
   databaseURL: "https://nanny-finder-reactjs.firebaseio.com",
   projectId: "nanny-finder-reactjs",
