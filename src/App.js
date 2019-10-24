@@ -40,6 +40,7 @@ class App extends Component {
             </ul>
           </nav>
           <Switch>
+            <React.Fragment>
               <Route exact path='/' component={Home} />
               {
               user
@@ -55,6 +56,7 @@ class App extends Component {
                   <strong>Sign In Required!</strong>
                 </div>
               }
+            </React.Fragment>
           </Switch>
         </div>
       </Router>
