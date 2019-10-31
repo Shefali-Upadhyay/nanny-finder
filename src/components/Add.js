@@ -3,6 +3,7 @@ import Firebase from '../Firebase';
 import '../App.css';
 
 class Add extends Component {
+
   constructor(props) {
     super(props);
     //state
