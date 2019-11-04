@@ -12,7 +12,7 @@ class Heading extends Component {
           {
             this.props.user_login
             ? <p>Hello, {this.props.user_login.displayName}</p>
-            : <p>Please sign in.</p>
+            : <p>Please sign in to use other features of the webpage.</p>
           }
           {
             this.props.user_login
@@ -24,8 +24,15 @@ class Heading extends Component {
           <h1 className="navbar-brand mt-2">FINDING NANNY</h1>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item"><Link to={'/'} className="nav-link"> Home </Link></li>
-            <li className="nav-item"><Link to={'/add'} className="nav-link">Add</Link></li>
-            <li className="nav-item"><Link to={'/modify'} className="nav-link">Modify</Link></li>
+            {
+              this.props.user_login
+              ?
+                <React.Fragment>
+                  <li className="nav-item"><Link to={'/add'} className="nav-link">Add</Link></li>
+                  <li className="nav-item"><Link to={'/modify'} className="nav-link">Modify</Link></li>
+                </React.Fragment>
+              : null
+            }
           </ul>
         </nav>
       </div>
